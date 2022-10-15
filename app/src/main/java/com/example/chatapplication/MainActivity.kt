@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
 
-                R.id.DASHBOARD -> replaceFragement(home())
+                R.id.DASHBOARD -> replaceFragement(fragmentHome())
                 R.id.MARKET -> replaceFragement(fragmentProfile())
                 R.id.PROFILE -> replaceFragement(fragmentSetting())
                 else->{
